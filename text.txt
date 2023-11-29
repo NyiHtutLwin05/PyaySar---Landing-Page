@@ -1,0 +1,10 @@
+// Code Collaboration Guidelines
+
+// 1. When working on code, ensure that code is merged in the "pages/Layout.jsx" section.
+
+// 2. For mobile and tablet development, use Chakra UI's `useBreakpointValue` for simplicity. However, feel free to use any other method if preferred.
+
+// Example:
+//    const isResponsive = useBreakpointValue({ base: true, md: false, sm: false });
+
+//3. Feel free to customize it further based on your team's specific needs

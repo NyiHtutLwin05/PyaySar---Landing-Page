@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Font-Family setup
+@font-face {
+  font-family: "Space Grotesk Bold";
+  src: url("./assets/Fonts/SpaceGrotesk-Bold.ttf");
+}
+@font-face {
+  font-family: "Space Grotesk Semibold";
+  src: url("./assets/Fonts/SpaceGrotesk-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Space Grotesk Regular";
+  src: url("./assets/Fonts/SpaceGrotesk-Light.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Medium";
+  src: url("./assets/Fonts/SpaceGrotesk-Medium.ttf");
+}
+@font-face {
+  font-family: "Space Grotesk Light";
+  src: url("./assets/Fonts/SpaceGrotesk-Light.ttf");
+}
