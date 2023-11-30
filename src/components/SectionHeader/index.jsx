@@ -13,12 +13,12 @@ const Index = ({ heading, overrideClasses = OverrideClasses }) => {
         className={
           overrideClasses.override
             ? overrideClasses.override
-            : `text-5xl/2 md:text-5xl leading-14/2 md:leading-12 font-bold w-[200px] md:w-[333px] text-center text-[#000000] ${overrideClasses.extends}`
+            : `text-5xl/2 sm:text-3xl md:text-5xl leading-14/2 sm:leading-10 md:leading-12 font-bold w-[200px] md:w-[333px] text-center text-[#000000] ${overrideClasses.extends}`
         }
       >
         {heading}
       </h1>
-      <hr className='w-[56px] md:w-[157px] text-black' />
+      <hr className='w-[56px] sm-[w-79px] md:w-[157px] text-black' />
     </div>
   );
 };

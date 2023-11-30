@@ -5,19 +5,21 @@ import './style.css';
 
 const AccordionItem = ({ id, title, content, isOpen, onToggle }) => (
   <div
-    className={`mb-2 shadow-2 rounded-2xl md:rounded-3xl p-5 md:p-8 ${
-      isOpen ? 'border border-gray' : ''
+    className={`flex flex-col justify-center mb-2 shadow-2 rounded-2xl md:rounded-3xl p-5 md:p-8 border border-gray transition-max-h duration-300 ${
+      isOpen
+        ? ' border-opacity-100 h-[230px] sm:h-[300px] lg:h-[200px]'
+        : 'border-opacity-0 h-[75px] md:h-[100px]'
     }`}
   >
     <div
       className='flex items-center justify-between cursor-pointer'
       onClick={() => onToggle(id)}
     >
-      <div className='text-sm md:text-xl leading-6 md:leading-9 text-neutral-800 font-satoshi font-medium'>
+      <div className='text-sm sm:text-lg md:text-xl leading-6 sm:leading-7 md:leading-9 text-neutral-800 font-satoshi font-medium'>
         {title}
       </div>
       <div
-        className={`w-[23.6px] md:w-[37px] h-[29px] md:h-[45px] rounded-sm md:rounded-md flex justify-center items-center transition-all duration-300 p-1 ${
+        className={`w-[23.6px] sm:w-[37px] h-[29px] sm:h-[45px] rounded-sm sm:rounded-md flex justify-center items-center p-1 ${
           isOpen ? 'bg-black' : 'border border-gray'
         }`}
       >
@@ -26,8 +28,8 @@ const AccordionItem = ({ id, title, content, isOpen, onToggle }) => (
     </div>
 
     <div
-      className={`text-sm md:text-lg leading-5 md:leading-7 text-neutral-600 transition-all duration-500 overflow-hidden font-satoshi ${
-        isOpen ? 'w-full h-auto mt-8' : 'h-0'
+      className={`text-sm sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7 text-neutral-600 overflow-hidden font-satoshi ${
+        isOpen ? 'w-full h-auto mt-5 md:mt-8 me-8' : 'hidden'
       }`}
     >
       {content}
