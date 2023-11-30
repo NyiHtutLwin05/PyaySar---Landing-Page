@@ -18,9 +18,9 @@ const Hero = () => {
   return (
     <>
       {/* Calling the Toast component from the Toast file for a delightful user experience */}
-      {/* <div>
+      <div>
         <Toast />
-      </div> */}
+      </div>
       {/* Toast End */}
 
       <section className="flex flex-col items-center my-20">

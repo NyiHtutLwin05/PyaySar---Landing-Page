@@ -10,36 +10,32 @@ import {
   Link,
   useDisclosure,
 } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "../../constants/Icons";
 
 const DrawerUI = ({
   onOpenProp,
-  placementProp = "left",
+  placementProp,
   onCloseProp,
   isOpenProp,
   btnRefProp,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const [placement, setPlacement] = React.useState("left");
 
   return (
     <>
-      <HamburgerIcon
-        onClick={onOpen}
-        ref={btnRef}
-        className="text-3xl cursor-pointer "
-      />
+      <div onClick={onOpen} ref={btnRef} className="text-3xl cursor-pointer ">
+        <HamburgerIcon />
+      </div>
 
-      <Drawer placement={placementProp} onClose={onClose} isOpen={isOpen}>
+      <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerHeader
-            borderBottomWidth="1px"
-            className=" font-spacegrockbold"
-          >
+          <DrawerHeader borderBottomWidth="1px" className=" font-SGsemibold">
             Pyay Sar
           </DrawerHeader>
-          <DrawerBody className="flex flex-col gap-2 mt-4 font-spacegrocksemibold">
+          <DrawerBody className="flex flex-col gap-2 mt-4 font-SGsemibold">
             <Link>Home</Link> <br />
             <Link>Feature</Link>
             <br />
