@@ -1,5 +1,13 @@
+import Toast from "../../components/Toast";
+
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <>
+      <div>
+        <Toast />
+      </div>
+    </>
+  );
 };
 
 export default Hero;
