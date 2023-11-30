@@ -6,6 +6,10 @@ const ContactTablet = () => {
   const bodyClasses =
     'text-sm sm:text-base leading-5 sm:leading-7 font-medium text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
 
+  const formOverrideClasses = {
+    extends: 'sm:w-[350px]',
+  };
+
   return (
     <div id='contact' className='mx-[30px]'>
       {/* Grid layout for content */}
@@ -29,7 +33,10 @@ const ContactTablet = () => {
         </div>
         {/* Contact form */}
         <div className='sm:row-span-1 sm:col-span-1 order-3 my-auto'>
-          <ContactForm />
+          <ContactForm
+            overrideClasses={formOverrideClasses}
+            btnLabel='Contact Us'
+          />
         </div>
       </div>
     </div>

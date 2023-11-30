@@ -30,7 +30,7 @@ const Index = ({
 };
 
 Index.propTypes = {
-  label: PropTypes.string,
+  label: PropTypes.any.isRequired,
   overrideClasses: PropTypes.object,
   action: PropTypes.func,
   children: PropTypes.any,

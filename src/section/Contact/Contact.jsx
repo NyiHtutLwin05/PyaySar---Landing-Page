@@ -11,6 +11,10 @@ const App = () => {
   const bodyClasses =
     'text-lg leading-7 font-medium text-[#000000] w-[390px] text-start';
 
+  const formOverrideClasses = {
+    extends: 'md:w-[400px]',
+  };
+
   return (
     <div id='contact' className='mx-[30px]'>
       {/* section header */}
@@ -41,7 +45,10 @@ const App = () => {
             </div>
             {/* Contact form */}
             <div className='row-span-1 col-span-1 order-3 my-auto'>
-              <ContactForm />
+              <ContactForm
+                overrideClasses={formOverrideClasses}
+                btnLabel='Contact Us'
+              />
             </div>
           </div>
         </div>
