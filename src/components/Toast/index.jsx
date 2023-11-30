@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { Link, Button } from "@chakra-ui/react";
+import { Box, Link, Button } from "@chakra-ui/react";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import { GlobalIconLg } from "../../constants/Icons";
+import DrawerUI from "../Drawer";
+import HeroTablet from "../../section/Hero/Hero.tablet";
 
 const Toast = () => {
   // The 'MenuItems' array contains the labels for the navigation menu.
@@ -40,7 +42,6 @@ const Toast = () => {
   };
   // ----
 
-  // const isMobile = useBreakpointValue({ base: true, md: false });
   return (
     <>
       {/* Toast Section */}
@@ -65,7 +66,10 @@ const Toast = () => {
       {/* Toast Section End */}
 
       {/* Nav Section */}
-      <div className="py-2 mx-[30px]  flex justify-center">
+      <div className="block  lg:hidden">
+        <HeroTablet />
+      </div>
+      <div className="py-2 mx-[30px]  lg:flex justify-center hidden ">
         <div className="flex items-center justify-around text-center w-[80%] ">
           <div className="flex items-center gap-10">
             <div className="w-12 h-12 border border-black rounded-full"></div>
@@ -109,12 +113,13 @@ const Toast = () => {
             <Button className="w-24 h-10 text-white bg-black rounded-md font-SGsemibold lg:flex md:hidden sm:hidden">
               Login
             </Button>
-            {/* <div className="lg:hidden">
+            <div className="lg:hidden">
               <DrawerUI />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
+
       {/* Nav Section End */}
     </>
   );
