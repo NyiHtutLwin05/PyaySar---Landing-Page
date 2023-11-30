@@ -65,9 +65,9 @@ const Toast = () => {
       {/* Toast Section End */}
 
       {/* Nav Section */}
-      <div className="py-2">
-        <div className="flex items-center justify-around text-center ">
-          <div className="flex items-center gap-11">
+      <div className="py-2 mx-[30px]  flex justify-center">
+        <div className="flex items-center justify-around text-center w-[80%] ">
+          <div className="flex items-center gap-10">
             <div className="w-12 h-12 border border-black rounded-full"></div>
             {MenuItems.map((i, id) => (
               <li key={id} className="list-none">
@@ -86,10 +86,10 @@ const Toast = () => {
               </li>
             ))}
           </div>
-          <div className="flex items-center gap-4 ">
+          <div className="flex items-center gap-5 ">
             <div className="flex items-center gap-2 text-center align-sub">
               <GlobalIconLg />
-              <p className="select-none font-spacegrocksemibold">English</p>
+              <p className="select-none font-SGregular">English</p>
               {isArrowDown ? (
                 <RiArrowDownSLine
                   className={`cursor-pointer text-2xl  transition-transform duration-300 transform ease-in ${
@@ -106,7 +106,7 @@ const Toast = () => {
                 />
               )}
             </div>
-            <Button className="w-24 h-10 text-white bg-black rounded-md font-spacrgrockregular lg:flex md:hidden sm:hidden">
+            <Button className="w-24 h-10 text-white bg-black rounded-md font-SGsemibold lg:flex md:hidden sm:hidden">
               Login
             </Button>
             {/* <div className="lg:hidden">
