@@ -9,7 +9,7 @@ const App = () => {
 
   // Define CSS classes for styling
   const bodyClasses =
-    'text-lg leading-7 font-medium text-[#000000] w-[390px] text-start';
+    'text-lg leading-7 font-SGregular text-[#000000] w-[390px] text-start';
 
   const formOverrideClasses = {
     extends: 'md:w-[400px]',
@@ -19,7 +19,7 @@ const App = () => {
     <div id='contact' className='mx-[30px]'>
       {/* section header */}
       <SectionHeader heading='Work with Us' />
-      <p className='text-center text-gray text-sm sm:text-base leading-5 sm:leading-12 font-light'>
+      <p className='text-center text-gray text-sm sm:text-base leading-5 sm:leading-12 font-SGlight'>
         Contact Us
       </p>
       {isMobileOrTablet ? (

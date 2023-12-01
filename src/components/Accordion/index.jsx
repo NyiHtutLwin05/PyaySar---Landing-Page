@@ -15,7 +15,7 @@ const AccordionItem = ({ id, title, content, isOpen, onToggle }) => (
       className='flex items-center justify-between cursor-pointer'
       onClick={() => onToggle(id)}
     >
-      <div className='text-sm sm:text-lg md:text-xl leading-6 sm:leading-7 md:leading-9 text-neutral-800 font-satoshi font-medium'>
+      <div className='text-sm sm:text-lg md:text-xl leading-6 sm:leading-7 md:leading-9 text-neutral-800 font-SGmedium'>
         {title}
       </div>
       <div
@@ -28,7 +28,7 @@ const AccordionItem = ({ id, title, content, isOpen, onToggle }) => (
     </div>
 
     <div
-      className={`text-sm sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7 text-neutral-600 overflow-hidden font-satoshi ${
+      className={`text-sm sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7 text-neutral-600 overflow-hidden font-SGregular ${
         isOpen ? 'w-full h-auto mt-5 md:mt-8 me-8' : 'hidden'
       }`}
     >

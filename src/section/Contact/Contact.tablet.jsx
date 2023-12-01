@@ -4,7 +4,7 @@ import ContactForm from '../../components/ContactForm';
 const ContactTablet = () => {
   // Define CSS classes for styling
   const bodyClasses =
-    'text-sm sm:text-base leading-5 sm:leading-7 font-medium text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
+    'text-sm sm:text-base leading-5 sm:leading-7 font-SGregular text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
 
   const formOverrideClasses = {
     extends: 'sm:w-[350px]',
@@ -25,7 +25,7 @@ const ContactTablet = () => {
           className={`sm:row-span-1 sm:col-span-1 order-1 sm:order-2 ${bodyClasses}`}
         >
           Feel free to get in touch with us if you have{' '}
-          <span className='text-blue font-medium'>
+          <span className='text-blue font-SGmedium'>
             any questions, suggestions, or inquiries.
           </span>
           <br /> Our dedicated team is here to assist you. You can reach out to
