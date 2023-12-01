@@ -23,8 +23,8 @@ const Hero = () => {
       </div>
       {/* Toast End */}
 
-      <section className="flex flex-col items-center my-20">
-        <h1 className="text-3xl md:text-4xl text-[#000000] leading-10 md:leading-14 font-bold text-center mb-8 md:mb-12 w-[359px] md:w-[864px]">
+      <section className="flex flex-col items-center my-20 ">
+        <h1 className="text-3xl md:text-5xl text-[#000000] leading-10 md:leading-14 font-SGsemibold text-center mb-8 md:mb-12 w-[359px] md:w-[864px]">
           <span className="text-blue">Stop Wasting</span>
           <br /> Your Time with Using Paper Invoice
         </h1>
@@ -35,7 +35,7 @@ const Hero = () => {
             className=" bottom-2 right-2 w-[205px] h-[156px] md:w-[355.93px] md:h-[262.81px]"
           />
         </div>
-        <p className="w-[300px] md:w-[600px] text-sm md:text-lg leading-5 md:leading-7 font-medium text-[#222222] text-center mb-5">
+        <p className="w-[300px] md:w-[600px] text-sm lg:text-xl md:text-lg leading-5 md:leading-7 font-medium text-[#222222] text-center mb-5">
           The invoice software improves speed and professionalism by allowing
           for branded invoice production and customization.
         </p>

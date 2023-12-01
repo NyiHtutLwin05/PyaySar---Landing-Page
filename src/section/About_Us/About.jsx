@@ -3,9 +3,9 @@ import aboutImg2 from "../../assets/Images/Big Shoes - Discussion (1) 2.webp";
 const About = () => {
   return (
     <>
-      <div className="mb-6 " id="about us">
+      <div className="my-20 mb-6 " id="about us">
         <div className="flex items-center justify-center gap-3 mt-20 text-4xl text-center lg:gap-14 md:gap-8">
-          <div className=" w-[3rem] lg:w-[9.5rem] md:w-[7rem] bg-black border-black border h-0 rounded-sm"></div>
+          <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
 
           <div className=" lg:w-80 md:w-64">
             <p className=" text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
@@ -13,12 +13,12 @@ const About = () => {
               <br />
               Effortless
             </p>
-            <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-2xl">
+            <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
               About Us
             </h1>
           </div>
 
-          <div className=" w-[3rem] lg:w-[9.5rem] md:w-[7rem] border-black border h-0 rounded-sm"></div>
+          <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
         </div>
         <div className="flex justify-center ">
           <div className="flex flex-col items-center justify-center w-[300px] lg:w-[900px] md:w-auto  lg:flex-row md:flex-row ">
