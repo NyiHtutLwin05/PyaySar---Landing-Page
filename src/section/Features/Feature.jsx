@@ -42,17 +42,16 @@ const Feature = () => {
 
       <div className="hidden md:inline lg:hidden">
         <div className="flex items-center justify-center gap-3 mt-20 text-4xl text-center lg:gap-14 md:gap-8">
-          <div className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black border h-0 rounded-sm"></div>
-
+          <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
           <div className="  text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
             Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
             Ivoicing For Your Business
-            <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-2xl">
+            <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
               Our Feature
             </h1>
           </div>
 
-          <div className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] border-black border h-0 rounded-sm"></div>
+          <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
         </div>
         <Flex align="center" justify="center" mt="2rem" gap="3">
           {listBox
@@ -60,18 +59,20 @@ const Feature = () => {
             .map((item, index) => (
               <div
                 key={index}
-                className={`shadow-xl flex p-2 pr-3   justify-evenly w-boxfsize  border-black border rounded-0.625  h-b1`}
+                className=" w-[16rem] h-[14rem] pr-6 flex flex-col justify-around border border-black rounded-lg"
               >
-                <div className="">
-                  <p
-                    className={` font-spacegrockbold font-medium font-lg tracking-wide h-20 align-middle flex items-center `}
+                <p className="flex h-20 pl-4 mt-2 text-xl font-medium tracking-wider text-center w-60 justify-items-start font-SGsemibold">
+                  {item}
+                </p>
+                <div className="flex justify-end ">
+                  <Button
+                    colorScheme="grey"
+                    className="flex w-12 h-10 mb-2 text-xl text-white bg-black rounded-xl font-SGregular"
                   >
-                    {item}
-                  </p>
+                    {" "}
+                    <AiOutlineArrowRight />
+                  </Button>
                 </div>
-                <button className="self-end h-10 mt-auto mb-2 text-xl text-white bg-gray-800 btn w-14 rounded-xl font-spacrgrockregular">
-                  <AiOutlineArrowRight />
-                </button>
               </div>
             ))}
         </Flex>
@@ -99,23 +100,23 @@ const Feature = () => {
       </div>
 
       {/* Tablet view End */}
-      <Box id="feature">
+      <Box id="feature" className="my-20 ">
         {isMobileViewOrTablet ? (
           <FeatureTablet />
         ) : (
           <div className="">
             <div className="flex items-center justify-center gap-3 mt-20 text-4xl text-center lg:gap-14 md:gap-8">
-              <div className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black border h-0 rounded-sm"></div>
+              <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
 
               <div className="  text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
                 Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
                 Ivoicing For Your Business
-                <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-2xl">
+                <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
                   Our Feature
                 </h1>
               </div>
 
-              <div className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] border-black border h-0 rounded-sm"></div>
+              <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
             </div>
             <div className="grid justify-items-center ">
               <div className=" w-[1150px] grid grid-cols-3 mt-16 mb-4 justify-items-center gap-y-7">
