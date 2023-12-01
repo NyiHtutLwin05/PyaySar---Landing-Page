@@ -10,7 +10,7 @@ const FAQ = () => {
       <p className='mx-auto text-center text-gray text-base md:text-lg leading-5 sm:leading-12 font-light w-[150px] sm:w-auto'>
         Frequently Asked Questions
       </p>
-      <div className='my-8'>
+      <div className='my-20'>
         <Accordion items={FAQs} />
       </div>
     </div>

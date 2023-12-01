@@ -2,7 +2,7 @@ import { AppleIcon, GooglePlayIcon } from '../../constants/Icons';
 
 const FooterTablet = () => {
   return (
-    <div className='flex justify-between items-start my-10 mx-[30px]'>
+    <div className='flex justify-between items-start my-20 mx-[30px]'>
       {/* navigation section */}
       <div>
         <div className='flex flex-col gap-2'>
