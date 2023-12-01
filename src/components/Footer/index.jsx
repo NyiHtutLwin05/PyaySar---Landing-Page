@@ -9,7 +9,7 @@ const iconBoxClasses =
 
 const Index = () => {
   return (
-    <div className='flex flex-col gap-5 py-5 mx-[30px]'>
+    <div className='flex flex-col gap-5 py-5 mx-[30px] font-SGregular'>
       <div className='flex justify-center items-center gap-5'>
         <a className={iconBoxClasses}>
           <TwitterIcon />

@@ -11,7 +11,7 @@ const Newsletter = () => {
   }
 
   return (
-    <div className='mx-[30px] text-SGregular'>
+    <div className='mx-[30px] font-SGregular'>
       {isMobileOrTablet ? (
         <NewsLetterTablet />
       ) : (
