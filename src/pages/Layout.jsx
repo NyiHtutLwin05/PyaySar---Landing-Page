@@ -8,7 +8,7 @@ import Newsletter from "../section/News_Letter";
 
 const Layout = () => {
   return (
-    <>
+    <div className='max-w-[1040px] mx-auto'>
       <section>
         <Hero />
       </section>
@@ -30,7 +30,7 @@ const Layout = () => {
       <section>
         <Footer />
       </section>
-    </>
+    </div>
   );
 };
 

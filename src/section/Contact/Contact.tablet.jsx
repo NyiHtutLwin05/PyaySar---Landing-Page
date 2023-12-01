@@ -13,7 +13,7 @@ const ContactTablet = () => {
   return (
     <div id='contact' className='mx-[30px]'>
       {/* Grid layout for content */}
-      <div className='grid grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 place-items-center gap-2 sm:gap-4 my-10 sm:my-16 mb-20'>
+      <div className='grid grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 place-items-center gap-2 sm:gap-4 my-20'>
         {/* Image content */}
         <img
           src={ContactImg}

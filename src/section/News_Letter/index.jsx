@@ -11,7 +11,7 @@ const Newsletter = () => {
   }
 
   return (
-    <div className='mx-[30px] py-10'>
+    <div className='mx-[30px]'>
       {isMobileOrTablet ? (
         <NewsLetterTablet />
       ) : (

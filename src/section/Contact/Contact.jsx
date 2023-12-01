@@ -27,7 +27,7 @@ const App = () => {
       ) : (
         <div>
           {/* Grid layout for content */}
-          <div className='grid grid-rows-2 grid-cols-2 place-items-center gap-4 my-16 mb-20'>
+          <div className='grid grid-rows-2 grid-cols-2 place-items-center gap-4 my-20'>
             {/* Image content */}
             <img
               src={ContactImg}
