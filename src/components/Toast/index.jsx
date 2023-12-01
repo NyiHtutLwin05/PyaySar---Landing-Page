@@ -66,7 +66,7 @@ const Toast = () => {
       {/* Toast Section End */}
 
       {/* Nav Section */}
-      <div className="block  lg:hidden">
+      <div className="block lg:hidden">
         <HeroTablet />
       </div>
       <div className="py-2 mx-[30px]  lg:flex justify-center hidden ">
@@ -110,7 +110,10 @@ const Toast = () => {
                 />
               )}
             </div>
-            <Button className="w-24 h-10 text-white bg-black rounded-md font-SGsemibold lg:flex md:hidden sm:hidden">
+            <Button
+              colorScheme="black"
+              className="w-24 h-10 text-white bg-black rounded-md font-SGsemibold lg:flex md:hidden sm:hidden"
+            >
               Login
             </Button>
             <div className="lg:hidden">
