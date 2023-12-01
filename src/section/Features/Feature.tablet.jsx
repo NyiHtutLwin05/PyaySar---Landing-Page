@@ -5,7 +5,7 @@ import {
   AiOutlineRight,
   AiOutlineLeft,
 } from "react-icons/ai";
-import { Button, Box } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { listBox } from "./Feature";
 
 const FeatureTablet = () => {
