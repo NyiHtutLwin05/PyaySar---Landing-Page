@@ -20,7 +20,7 @@ const FooterTablet = () => {
         </div>
 
         {/* navigation items */}
-        <div className='flex text-[11px] sm:text-base leading-4 sm:leading-5 font-medium text-black w-[180px] sm:w-[370px] justify-between'>
+        <div className='flex text-[11px] sm:text-base leading-4 sm:leading-5 font-SGmedium text-black w-[180px] sm:w-[370px] justify-between'>
           <a href='#'>Home</a>
           <a href='#features'>Features</a>
           <a href='#about'>About Us</a>

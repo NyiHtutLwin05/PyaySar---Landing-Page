@@ -7,7 +7,7 @@ const Footer = () => {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <div>
+    <div className='text-SGregular'>
       {isMobileOrTablet ? (
         <FooterTablet />
       ) : (
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
 
             {/* navigation items */}
-            <div className='flex text-lg leading-6 font-medium text-black w-[421px] justify-between'>
+            <div className='flex text-lg leading-6 font-SGregular text-black w-[421px] justify-between'>
               <a href='#'>Home</a>
               <a href='#features'>Features</a>
               <a href='#about'>About Us</a>
@@ -38,7 +38,7 @@ const Footer = () => {
           {/* download app section */}
 
           <div>
-            <p className='text-2xl leading-8 font-medium text-center mb-8'>
+            <p className='text-2xl leading-8 font-SGregular text-center mb-8'>
               Coming Soon
             </p>
             <div className='md:flex gap-5'>
@@ -62,7 +62,7 @@ const Footer = () => {
                   Download on the <br />{' '}
                   <a
                     href='#'
-                    className='text-blue text-lg leading-6 font-medium'
+                    className='text-blue text-lg leading-6 font-SGmedium'
                   >
                     App Store
                   </a>
