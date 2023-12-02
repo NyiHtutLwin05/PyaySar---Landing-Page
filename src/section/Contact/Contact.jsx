@@ -9,7 +9,7 @@ const App = () => {
 
   // Define CSS classes for styling
   const bodyClasses =
-    'text-lg leading-7 font-SGregular text-[#000000] w-[390px] text-start';
+    'font-SGmedium text-lg text-[#000000] w-[390px] text-start';
 
   const formOverrideClasses = {
     extends: 'md:w-[400px]',
@@ -19,7 +19,7 @@ const App = () => {
     <div id='contact' className='mx-[30px]'>
       {/* section header */}
       <SectionHeader heading='Work with Us' />
-      <p className='text-center text-gray text-sm sm:text-base leading-5 sm:leading-12 font-SGlight'>
+      <p className='text-xs font-SGregular lg:text-xl md:text-lg text-gray text-center'>
         Contact Us
       </p>
       {isMobileOrTablet ? (
@@ -37,7 +37,7 @@ const App = () => {
             {/* Text Content */}
             <div className={`row-span-1 col-span-1 order-2 ${bodyClasses}`}>
               Feel free to get in touch with us if you have{' '}
-              <span className='text-blue font-medium'>
+              <span className='text-blue'>
                 any questions, suggestions, or inquiries.
               </span>
               <br /> Our dedicated team is here to assist you. You can reach out
