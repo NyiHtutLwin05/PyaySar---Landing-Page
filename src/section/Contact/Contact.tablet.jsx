@@ -4,7 +4,7 @@ import ContactForm from '../../components/ContactForm';
 const ContactTablet = () => {
   // Define CSS classes for styling
   const bodyClasses =
-    'text-sm sm:text-base leading-5 sm:leading-7 font-SGregular text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
+    'text-xs sm:text-base leading-5 sm:leading-7 font-SGmedium text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
 
   const formOverrideClasses = {
     extends: 'sm:w-[350px]',

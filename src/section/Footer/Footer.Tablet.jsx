@@ -10,10 +10,10 @@ const FooterTablet = () => {
           <div className='w-[50px] h-[50px] sm:w-[68px] sm:h-[68px] rounded-full border border-black'></div>
           <div className='text-[#000000] mb-3 sm:flex sm:items-center gap-5'>
             {/* Brand Information */}
-            <p className='text-base sm:text-lg font-medium leading-6'>
+            <p className='text-base sm:text-lg font-SGmedium leading-6'>
               Pyaysar
             </p>
-            <p className='text-sm sm:text-base leading-5 sm:leading-12 font-light'>
+            <p className='text-sm sm:text-base leading-5 sm:leading-12 font-SGlight'>
               something are good
             </p>
           </div>
@@ -31,7 +31,7 @@ const FooterTablet = () => {
       {/* download app section */}
 
       <div>
-        <p className='text-base sm:text-lg leading-6 font-medium text-center mb-2 sm:mb-3'>
+        <p className='text-base sm:text-lg leading-6 font-SGmedium text-center mb-2 sm:mb-3'>
           Coming Soon
         </p>
         <div>
@@ -42,7 +42,7 @@ const FooterTablet = () => {
               Download on the <br />{' '}
               <a
                 href='#'
-                className='text-blue text-[11px] sm:text-base leading-4 font-medium'
+                className='text-blue text-[11px] sm:text-base leading-4 font-SGmedium'
               >
                 Google Play
               </a>
@@ -55,7 +55,7 @@ const FooterTablet = () => {
               Download on the <br />{' '}
               <a
                 href='#'
-                className='text-blue text-[11px] sm:text-base leading-4 font-medium'
+                className='text-blue text-[11px] sm:text-base leading-4 font-SGmedium'
               >
                 App Store
               </a>
