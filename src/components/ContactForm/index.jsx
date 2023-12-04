@@ -38,7 +38,7 @@ const Index = ({ overrideClasses = OverrideClasses, btnLabel }) => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder='Enter your email address'
-          className='text-[11px] sm:text-sm lg:text-base leading-5 font-light'
+          className='text-[8px] sm:text-sm lg:text-base leading-5 font-light'
         />
         <Button
           label={btnLabel}
