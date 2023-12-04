@@ -22,12 +22,12 @@ const Index = () => {
         </a>
       </div>
 
-      <hr className='border border-black w-full' />
+      <hr className='border-black w-full' />
 
-      <div className='flex flex-col justify-center items-center sm:flex-row sm:gap-5 text-sm sm:text-base md:text-lg leading-5 sm:leading-12'>
+      <div className='flex flex-col justify-center items-center sm:flex-row sm:gap-5 text-sm sm:text-base md:text-lg leading-5 sm:leading-12 font-SGmedium'>
         <p className='flex gap-7'>&copy; Copyright. All rights reserved.</p>
-        <hr className='hidden sm:inline border border-black w-5 rotate-90' />
-        <div className='flex gap-7 font-medium'>
+        <hr className='hidden sm:inline border-black w-5 rotate-90' />
+        <div className='flex gap-7'>
           <a>Privacy</a>
           <a>Terms</a>
           <a>Copyright</a>
