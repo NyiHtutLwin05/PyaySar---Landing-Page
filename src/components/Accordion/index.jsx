@@ -54,7 +54,7 @@ const Index = ({ items = [] }) => {
 
   return (
     <>
-      {items.map((item) => (
+      {items?.map((item) => (
         <AccordionItem
           key={item.id}
           onToggle={handleToggle}

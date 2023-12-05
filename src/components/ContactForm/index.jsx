@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Button from '../Button';
 import { PropTypes } from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 const OverrideClasses = {
   override: '',
@@ -8,8 +9,8 @@ const OverrideClasses = {
 };
 
 const Index = ({ overrideClasses = OverrideClasses, btnLabel }) => {
+  const {t} = useTranslation();
   // Define CSS classes for styling
-
   const btnOverrideClasses = {
     extends:
       'w-auto h-[26px] sm:h-9 lg:h-[46px] px-5 py-[15px] rounded-sm sm:rounded-xl text-xs sm:text-sm lg:text-base',
@@ -37,7 +38,7 @@ const Index = ({ overrideClasses = OverrideClasses, btnLabel }) => {
           type='text'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder='Enter your email address'
+          placeholder={t('contact.form.label')}
           className='text-[8px] sm:text-sm lg:text-base leading-5 font-light'
         />
         <Button

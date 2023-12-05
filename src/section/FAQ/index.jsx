@@ -1,17 +1,19 @@
-import { FAQs } from '../../data';
 import Accordion from '../../components/Accordion';
 import SectionHeader from '../../components/SectionHeader';
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
+  const { t } = useTranslation();
+  const data = t("faq.accordion", { returnObjects: true });
   return (
     <div className='mx-[30px]'>
       {/* section */}
-      <SectionHeader heading='FAQ' />
+      <SectionHeader heading={t('faq.heading')} />
       <p className='mx-auto text-center text-gray text-base md:text-lg leading-5 sm:leading-12 font-SGlight w-[150px] sm:w-auto'>
-        Frequently Asked Questions
+      {t('faq.subHeading')}
       </p>
       <div className='my-20'>
-        <Accordion items={FAQs} />
+        <Accordion items={data} />
       </div>
     </div>
   );

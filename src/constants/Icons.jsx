@@ -132,7 +132,7 @@ export const GlobalIconLg = () => {
 export const TwitterIcon = () => {
   return (
     <div className='w-2 h-2'>
-      <img src='https://s3-alpha-sig.figma.com/img/ae3f/f677/f79ce7c11200add41b305782576c4b0b?Expires=1701648000&Signature=d~3wRYTWqlGT3-6H~ltDWbXUU~HUub-AxVbgCWo74Rch8jkDmQ8NNVmnqrCvYjuL67O26sJU2aytj8oi7zFNV4GOQ-IIfWZKdeI5lgDFZc2lk9pqfvm~Q2To2qm1k-LNQZV2cvF3HdcK8~MzzGwCJgTmfjm1t48SvGvt4lzzhsKfUICi~DbrzLOdbxPfBGIHc1~xTGheoQy-KPrDjK~EeRBFQEEX8FFAEYA9WUvR2srp-A~Yxdpw~PlMwJm1hA-8hk938Y51r7HYvCir~UnwIZEqHGQ2f1fFoDuipV5Vsth~QyN6-wfcyXpD274Umv4V2qTjf1CIuLrZV9tLlioIxw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
+      <img src='https://s3-alpha-sig.figma.com/img/ae3f/f677/f79ce7c11200add41b305782576c4b0b?Expires=1702857600&Signature=m1PAf8ZQDIGjZbOn-pie1xX1jDR0xx9EdXftLwSGyIWJh7FIqHqJkR35xU0cDP0M-VhXDlkjDlQ-yXfeF3FoyG9BA~Ebn4Jahxa5mjPF8RTIyc21JsBY6yobXWJjo~ew0x~gLkkFQg9MlwxhaJdXxOBvf1XSMgUanTGI3FOxVjdGEIMGX~26GbBdFSf-OTvrz6xsD-LdMTXWqZqSsBMJmGC3Ja25lybwQrFb34DgTJ0iXPspqFy1iqTrGDXQmeyMPS5N145fYuI0p98qsBhvokJUs4FhaT5gJriteVFH~32PJtwG0~NNNTee-uQ09Is2OuyW5yS2d8zTjxCGwVve-g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
     </div>
   );
 };
@@ -140,7 +140,7 @@ export const TwitterIcon = () => {
 export const LinkedInIcon = () => {
   return (
     <div className='w-2.5 h-2.5'>
-      <img src='https://s3-alpha-sig.figma.com/img/8d69/c7f1/4a87e267576e92ac681c0d7340bfbb34?Expires=1701648000&Signature=UAop8SSYe6Pzgm84ZqFYKpa4r2HvtJgHTBRa4w4224J3Hipz9IT3Klj2cl41B1p7VYqnoGx1MUcWApWeDn6rqAXS-fq6nOatOuUL6Ht4lRFxrqCq3-A5YVdJauh4m~cfG95YKn~La5MD-c83mdWAEYYbshGJtfFa4qRxjmrIM9k7TeWaGDpmYKi0F-We98uhKf2QwN-0PMcSrFRPD3KA9JEwsr5CNJ-vq0YoJCBNwCmig6peUhBKtESxXDTO7FXmkUsz~bd3~iKz7yyfXhlhd5mauVrcPOUpwS~Qo9eaxfyJgPiDTez0Jax3M3HB~GXimDqli1wezDFL7zZ0Em9LfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
+      <img src='https://s3-alpha-sig.figma.com/img/8d69/c7f1/4a87e267576e92ac681c0d7340bfbb34?Expires=1702857600&Signature=hAU57mPpuZnvjSsgByS037U9WI9xmNUkpTZmHvhLb9KJoU01EbYpHb0q2iKW0EY0Ieep8760B1Lg~AKPh2eW8OmMUNdGTvPr35iMpuYZoA6sdK0YZOnm19QjsBr5IJPXj9VUUyExWFdQokyX8hNAyCfKLtpgDPvXPyNub4JHigHbCtcgiEPk~w3YO4nQPYoPrswc2mJBA2g1lmIsmdjwXyNSA8EH01408Ud~RMbcXlqLJB4GuagzHx2EHAtgwIdF5kX-U2o87Btl0oosyqAylJsbCG9rO0nSRpOJW1pjIftCz~zuttp98NHaAZ~zWWR9hTCsQXzqOM6166-6L2j66A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
     </div>
   );
 };
@@ -148,7 +148,7 @@ export const LinkedInIcon = () => {
 export const FacebookIcon = () => {
   return (
     <div>
-      <img src='https://s3-alpha-sig.figma.com/img/963f/790a/493a5b524b8520bbeff383fd58aec22c?Expires=1701648000&Signature=d3fQQXHpcloxTeHkW-DoQsfKSn0rgIxuYWzsWC0fq2RD6P6ZjYYcqFXy2YD8pWjEgCWbUF3K30NtMocgn-QlJLNJCM8Q1LNyptnry6RFUI067p3hQ9EcnTlTKzxZy2iL14CYF1Zii1Vx3VqW5pB-db5fpAbsWaHMv6muFotFtTS2y94mpUGFsRT0~vbSFRMQnKpczQ0r705tXYgGJfKtrGfd9iMwEmeIgai61ojIAt6iKwzmZCFKtGyyTZYmE0zkj0fTcrd0Y5Gyl0OtBGWjBMEqt~8sfK2roWt6p6Hs7j129MzSbCxjwJ1aJBQzRziQNQVqWmxfRU59CV8xkPU37g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
+      <img src='https://s3-alpha-sig.figma.com/img/963f/790a/493a5b524b8520bbeff383fd58aec22c?Expires=1702857600&Signature=jORcs3b3vxxxDwrM6QnIyQSTzR9F7ZbBZZeHH-8h5KLigihBjwl6anatHpmHMQvnaB7glo9DDBwY82ThMNsUjiLnzkqf4ns~GhPOO6w7NVGqWITx78kRGPXZse7RI4DGfuW7bLb7rnwsAxHtZFyKqRJo1K-pe8WYnq3UI74xIbTNUZI7jL97NF7Zttx20CN6OVDy1mfzY3TxGild2xKDyvO21BHS7yAy6ix27E2ywv6B-zopoELaHgp-vaOXyKyc5wa9CzfPBnJa1t6K559WVXWjElw9y6UGyoopbBzIzw~tGgCBUbZyjfWZUuf8MNWa-uuE715MAT79yWmyaiH0RQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
     </div>
   );
 };
