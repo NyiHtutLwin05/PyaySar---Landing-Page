@@ -3,9 +3,11 @@ import ContactTablet from './Contact.tablet';
 import SectionHeader from '../../components/SectionHeader';
 import ContactImg from '../../assets/Images/Contact_us.webp';
 import ContactForm from '../../components/ContactForm';
+import { useTranslation } from 'react-i18next';
 
 const App = () => {
   const isMobileOrTablet = useMediaQuery({ maxWidth: 768 });
+  const { t } = useTranslation();
 
   // Define CSS classes for styling
   const bodyClasses =
@@ -18,10 +20,11 @@ const App = () => {
   return (
     <div id='contact' className='mx-[30px]'>
       {/* section header */}
-      <SectionHeader heading='Work with Us' />
+      <SectionHeader heading={t('contact.heading')} />
       <p className='text-xs font-SGregular lg:text-xl md:text-lg text-gray text-center'>
-        Contact Us
+        {t('contact.subHeading')}
       </p>
+
       {isMobileOrTablet ? (
         <ContactTablet />
       ) : (
@@ -36,18 +39,17 @@ const App = () => {
             />
             {/* Text Content */}
             <div className={`row-span-1 col-span-1 order-2 ${bodyClasses}`}>
-              Feel free to get in touch with us if you have{' '}
+              {t('contact.content.before')}
               <span className='text-blue'>
-                any questions, suggestions, or inquiries.
+                {t('contact.content.blue-text')}
               </span>
-              <br /> Our dedicated team is here to assist you. You can reach out
-              to us through the contact form below
+              <br /> {t('contact.content.after')}
             </div>
             {/* Contact form */}
             <div className='row-span-1 col-span-1 order-3 my-auto'>
               <ContactForm
                 overrideClasses={formOverrideClasses}
-                btnLabel='Contact Us'
+                btnLabel={t('contact.form.btnText')}
               />
             </div>
           </div>

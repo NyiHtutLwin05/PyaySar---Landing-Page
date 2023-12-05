@@ -1,36 +1,3 @@
-export const FAQs = [
-  {
-    id: 1,
-    title: "Lorem ipsum dolor sit amet consecter.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.",
-  },
-  {
-    id: 2,
-    title: "Lorem ipsum dolor sit amet consecter.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.",
-  },
-  {
-    id: 3,
-    title: "Lorem ipsum dolor sit amet consecter.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.",
-  },
-  {
-    id: 4,
-    title: "Lorem ipsum dolor sit amet consecter.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.",
-  },
-  {
-    id: 5,
-    title: "Lorem ipsum dolor sit amet consecter.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.",
-  },
-];
-
 export const Features = [
   {
     id: 1,

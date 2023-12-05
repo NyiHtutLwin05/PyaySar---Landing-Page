@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import ContactImg from '../../assets/Images/Contact_us.webp';
 import ContactForm from '../../components/ContactForm';
 
 const ContactTablet = () => {
+  const { t } = useTranslation();
+
   // Define CSS classes for styling
   const bodyClasses =
     'text-xs sm:text-base leading-5 sm:leading-7 font-SGmedium text-[#000000] w-[270px] sm:w-full text-center sm:text-start';
@@ -24,18 +27,17 @@ const ContactTablet = () => {
         <div
           className={`sm:row-span-1 sm:col-span-1 order-1 sm:order-2 ${bodyClasses}`}
         >
-          Feel free to get in touch with us if you have{' '}
+          {t('contact.content.before')}
           <span className='text-blue font-SGmedium'>
-            any questions, suggestions, or inquiries.
+            {t('contact.content.blue-text')}
           </span>
-          <br /> Our dedicated team is here to assist you. You can reach out to
-          us through the contact form below
+          <br /> {t('contact.content.after')}
         </div>
         {/* Contact form */}
         <div className='sm:row-span-1 sm:col-span-1 order-3 my-auto'>
           <ContactForm
             overrideClasses={formOverrideClasses}
-            btnLabel='Contact Us'
+            btnLabel={t('contact.form.btnText')}
           />
         </div>
       </div>

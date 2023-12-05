@@ -1,6 +1,5 @@
 {
-   
-        "toast":{},
+   "toast":{},
          "nav":{
             "language":{
                 "selectLanguage": "Select Language",
@@ -46,10 +45,69 @@
              "part1": "we understand the importance of <span class=\"text-blue\">efficient</span> and <span class=\"text-blue\">hassle-free</span> <span class=\"text-blue\">invoicing</span> for your business. <br /> We are dedicated to simplifying your invoicing processes, allowing you to focus on what matters most – growing your business.",
              "part2": "Our mission is to provide you with a <span class=\"text-blue\">comprehensive and user-friendly</span> invoicing solution. <br /> Whether you're a <span class=\"text-blue\">small business owner, a freelancer</span>, or part of a larger enterprise, our services are designed to meet your unique invoicing needs."
          },
-         "contact":{},
-         "faq":{},
-         "newsletter":{},
-         "footer":{}
-
-    
+  "contact": {
+    "heading": "Work with Us",
+    "subHeading": "Contact Us",
+    "content": {
+      "before": "Feel free to get in touch with us if you have ",
+      "blue-text": "any questions, suggestions, or inquiries.",
+      "after": "Our dedicated team is here to assist you. You can reach out to us through the contact form below"
+    },
+    "form": {
+      "label": "Enter your email address",
+      "btnText": "Contact Us"
+    }
+  },
+  "faq": {
+    "heading": "FAQ",
+    "subHeading": "Frequently Asked Questions",
+    "accordion": [
+      {
+        "id": 1,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 2,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 3,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 4,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 5,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      }
+    ]
+  },
+  "newsletter": {
+    "heading": "Don’t miss out !",
+    "subHeading": "Run your business with confidence"
+  },
+  "footer": {
+    "navigation-section": {
+      "title": "Pyaysar",
+      "subtitle": "Something are good"
+    },
+    "download-app-section": {
+      "title": "Coming Soon",
+      "download-text": "Download on the"
+    },
+    "main-footer":{
+      "copyright-text":"Copyright. All rights reserved.",
+      "privacy":"Privacy",
+      "terms":"Terms",
+      "copyright":"Copyright"
+    }
+  }
 }
+      
