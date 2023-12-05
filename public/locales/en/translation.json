@@ -1,14 +1,71 @@
 {
-   
-        "toast":{},
-         "nav":{},
-         "hero":{},
-         "features":{},
-         "about":{},
-         "contact":{},
-         "faq":{},
-         "newsletter":{},
-         "footer":{}
-
-    
+  "toast": {},
+  "nav": {},
+  "hero": {},
+  "features": {},
+  "about": {},
+  "contact": {
+    "heading": "Work with Us",
+    "subHeading": "Contact Us",
+    "content": {
+      "before": "Feel free to get in touch with us if you have ",
+      "blue-text": "any questions, suggestions, or inquiries.",
+      "after": "Our dedicated team is here to assist you. You can reach out to us through the contact form below"
+    },
+    "form": {
+      "label": "Enter your email address",
+      "btnText": "Contact Us"
+    }
+  },
+  "faq": {
+    "heading": "FAQ",
+    "subHeading": "Frequently Asked Questions",
+    "accordion": [
+      {
+        "id": 1,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 2,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 3,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 4,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      },
+      {
+        "id": 5,
+        "title": "Lorem ipsum dolor sit amet consecter.",
+        "content": "Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis.Lorem ipsum dolor sit amet consectetur. Nullam ac non consequat vulputate vitae mi sit duis."
+      }
+    ]
+  },
+  "newsletter": {
+    "heading": "Don’t miss out !",
+    "subHeading": "Run your business with confidence"
+  },
+  "footer": {
+    "navigation-section": {
+      "title": "Pyaysar",
+      "subtitle": "Something are good"
+    },
+    "download-app-section": {
+      "title": "Coming Soon",
+      "download-text": "Download on the"
+    },
+    "main-footer":{
+      "copyright-text":"Copyright. All rights reserved.",
+      "privacy":"Privacy",
+      "terms":"Terms",
+      "copyright":"Copyright"
+    }
+  }
 }
