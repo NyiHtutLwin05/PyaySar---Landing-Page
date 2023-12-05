@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
 import aboutImg1 from "../../assets/Images/Big Shoes - Discussion (1) 1.webp";
 import aboutImg2 from "../../assets/Images/Big Shoes - Discussion (1) 2.webp";
 const About = () => {
+  const { t } = useTranslation();
+  const contentHTML = t("about.part1");
+  const contentHTML2 = t("about.part2");
   return (
     <>
       <div className="my-20 mb-6 " id="about us">
@@ -9,12 +13,12 @@ const About = () => {
 
           <div className=" lg:w-80 md:w-64">
             <p className=" text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
-              Making Invoicing
+              {t("about.MakingInvoicing")}
               <br />
-              Effortless
+              {t("about.Effortless")}
             </p>
             <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
-              About Us
+              {t("about.Title")}
             </h1>
           </div>
 
@@ -27,16 +31,10 @@ const About = () => {
               <h1 className="text-xl font-SGsemibold md:text-3xl sm:text-2xl">
                 At Pyaysar
               </h1>
-              <p className="mt-6 text-xs font-SGsemibold lg:text-lg md:text-lg">
-                we understand the importance of{" "}
-                <span className=" text-blue">efficient</span> and{" "}
-                <span className=" text-blue"> hassle-free </span>{" "}
-                <span className=" text-blue"> invoicing </span>for your
-                business. <br />
-                We are dedicated to simplifying your invoicing processes,
-                allowing you to focus on what matters most – growing your
-                business.
-              </p>
+              <p
+                className="mt-6 text-xs font-SGsemibold lg:text-lg md:text-lg"
+                dangerouslySetInnerHTML={{ __html: contentHTML }}
+              ></p>
             </div>
 
             <div className="flex self-end">
@@ -60,19 +58,10 @@ const About = () => {
                 Our Mission: <br className="lg:hidden md:hidden " /> Making
                 Invoicing Effortless
               </h1>
-              <p className="mt-6 text-xs font-SGsemibold lg:text-lg md:text-lg">
-                Our mission is to provide you with a{" "}
-                <span className=" text-blue">
-                  comprehensive and user-friendly{" "}
-                </span>{" "}
-                invoicing solution. <br /> Whether you&apos; re a{" "}
-                <span className=" text-blue">
-                  {" "}
-                  small business owner, a freelancer
-                </span>
-                , or part of a larger enterprise, our services are designed to
-                meet your unique invoicing needs.
-              </p>
+              <p
+                className="mt-6 text-xs font-SGsemibold lg:text-lg md:text-lg"
+                dangerouslySetInnerHTML={{ __html: contentHTML2 }}
+              ></p>
             </div>
           </div>
         </div>

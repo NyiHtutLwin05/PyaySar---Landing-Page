@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { Button } from "@chakra-ui/react";
 import { listBox } from "./Feature";
+import { useTranslation } from "react-i18next";
 
 const FeatureTablet = () => {
   const [currentI, setCurrentI] = useState(0);
@@ -16,6 +17,8 @@ const FeatureTablet = () => {
   const prev = () => {
     setCurrentI((prev) => (prev - 1 + listBox.length) % listBox.length);
   };
+  const { t } = useTranslation();
+  const contentHtml = t("features.content");
   return (
     <>
       {/* Mobile View */}
@@ -24,10 +27,11 @@ const FeatureTablet = () => {
           <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
 
           <div className=" text-sm lg:text-[2rem] md:text-[1rem] font-SGsemibold">
-            Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
-            Ivoicing For Your Business
+            {/* Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
+            Ivoicing For Your Business */}
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
             <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-2xl">
-              Our Feature
+              {t("features.title")}
             </h1>
           </div>
 
@@ -51,7 +55,7 @@ const FeatureTablet = () => {
                   } flex flex-col gap-y-10    w-[13rem]  border-black border rounded-lg  h-[12rem]`}
                 >
                   <p className="flex items-center h-20 pl-2 text-xl font-medium tracking-wide align-middle font-SGsemibold">
-                    {i}
+                    {t(`features.item.${i}`)}
                   </p>
                   <div className="flex select-none cursor-pointer justify-end w-[11rem] ">
                     <Button

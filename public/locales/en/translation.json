@@ -1,10 +1,51 @@
 {
    
         "toast":{},
-         "nav":{},
-         "hero":{},
-         "features":{},
-         "about":{},
+         "nav":{
+            "language":{
+                "selectLanguage": "Select Language",
+                "english": "English",
+                "myanmar": "Myanmar"
+            },
+            "navitem":{
+                "home":"Home",
+                "feature":"Feature",
+                "about us":"About Us",
+                "about":"About Us",
+                "contact":"Contact"
+
+            },
+            "button":{
+                "login":"Login"
+            } 
+         },
+         "hero":{
+            "part1Title":"Stop Wasting",
+            "part2Title":"Your Time with Using Paper Invoice",
+            "description":"The invoice software improves speed and professionalism by allowing for branded invoice production and customization."
+         },
+         "features":{
+             "title": "Our Feature",
+             "content":"Why <span class=\"text-blue\">Choose</span> Pyaysar <br /> Invoicing For Your Business",
+             "item":{
+                "PDF Generation":"PDF Generation",
+                "Invoice Generation":"Invoice Generation",
+                "Dashboard Overview":"Dashboard Overview",
+                "Payment Tracking":"Payment Tracking",
+                "Automated Calculation":"Automated Calculation",
+                "Customization":"Customization",
+                "Client Management": "Client Management",
+                "Product and Service Catalog":"Product and Service Catalog",
+                "Finical Report":"Finical Report"
+             }
+         },
+         "about":{
+             "MakingInvoicing":"Making Invoicing",
+             "Effortless":"Effortless",
+             "Title": "About Us",
+             "part1": "we understand the importance of <span class=\"text-blue\">efficient</span> and <span class=\"text-blue\">hassle-free</span> <span class=\"text-blue\">invoicing</span> for your business. <br /> We are dedicated to simplifying your invoicing processes, allowing you to focus on what matters most – growing your business.",
+             "part2": "Our mission is to provide you with a <span class=\"text-blue\">comprehensive and user-friendly</span> invoicing solution. <br /> Whether you're a <span class=\"text-blue\">small business owner, a freelancer</span>, or part of a larger enterprise, our services are designed to meet your unique invoicing needs."
+         },
          "contact":{},
          "faq":{},
          "newsletter":{},

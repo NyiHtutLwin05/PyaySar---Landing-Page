@@ -1,18 +1,24 @@
 import { useDisclosure } from "@chakra-ui/react";
 import React, { useState } from "react";
-import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+// import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import DrawerUI from "../../components/Drawer";
 import { GlobalIconLg } from "../../constants/Icons";
-
+import i18n from "../../../i18n";
+import { useTranslation } from "react-i18next";
 const HeroTablet = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [placement, setPlacement] = React.useState("left");
-  const [isArrowDown, setArrow] = useState(true);
+  // const [isArrowDown, setArrow] = useState(true);
 
-  const handleClick = () => {
-    setArrow((p) => !p);
+  // const handleClick = () => {
+  //   setArrow((p) => !p);
+  // };
+  const changeLanguage = (e) => {
+    const selectedLanguage = e.target.value;
+    i18n.changeLanguage(selectedLanguage);
   };
+  const { t } = useTranslation();
   return (
     <>
       <div>
@@ -21,7 +27,17 @@ const HeroTablet = () => {
           <div className="flex gap-3">
             <div className="flex ">
               <div className="flex items-center gap-[8px] text-center align-sub">
-                <div className="">
+                <div className="flex gap-2">
+                  <GlobalIconLg />
+                  <select
+                    className="text-xs font-medium leading-7 md:text-sm"
+                    onClick={changeLanguage}
+                  >
+                    <option value="en">{t("nav.language.english")}</option>
+                    <option value="mm">{t("nav.language.myanmar")}</option>
+                  </select>
+                </div>
+                {/* <div className="">
                   <GlobalIconLg />
                 </div>
                 <div>
@@ -43,7 +59,7 @@ const HeroTablet = () => {
                       onClick={handleClick}
                     />
                   )}
-                </div>
+                </div> */}
               </div>
             </div>
 

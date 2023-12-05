@@ -11,6 +11,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "../../constants/Icons";
+import { useTranslation } from "react-i18next";
 
 const DrawerUI = ({
   onOpenProp,
@@ -22,6 +23,7 @@ const DrawerUI = ({
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [placement, setPlacement] = React.useState("left");
+  const { t } = useTranslation();
 
   return (
     <>
@@ -36,12 +38,12 @@ const DrawerUI = ({
             Pyay Sar
           </DrawerHeader>
           <DrawerBody className="flex flex-col gap-2 mt-4 font-SGsemibold">
-            <Link>Home</Link> <br />
-            <Link>Feature</Link>
+            <Link href="">{t("nav.navitem.home")}</Link> <br />
+            <Link href="">{t("nav.navitem.feature")}</Link>
             <br />
-            <Link>About Us</Link>
+            <Link>{t("nav.navitem.about")}</Link>
             <br />
-            <Link>Contact</Link>
+            <Link>{t("nav.navitem.contact")}</Link>
             <br />
           </DrawerBody>
         </DrawerContent>
