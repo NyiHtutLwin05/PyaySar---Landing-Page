@@ -2,10 +2,8 @@ import Toast from "../../components/Toast";
 import HeroImg from "../../assets/Images/HeroImage.webp";
 import Button from "../../components/Button/index";
 import { ArrowIcon, ArrowIconSmall } from "../../constants/Icons";
-<<<<<<< HEAD
+
 import { useTranslation } from "react-i18next";
-=======
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
 
 // Style Classes
 const btnOverrideClasses = {
@@ -19,10 +17,8 @@ const btnWhiteOverrideClasses = {
 };
 // ----
 const Hero = () => {
-<<<<<<< HEAD
   const { t } = useTranslation();
-=======
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
+
   return (
     <>
       {/* Calling the Toast component from the Toast file for a delightful user experience */}
@@ -32,14 +28,9 @@ const Hero = () => {
       {/* Toast End */}
 
       <section className="flex flex-col items-center my-20 ">
-        <h1 className="text-3xl md:text-5xl text-[#000000] leading-10 md:leading-14 font-SGsemibold text-center mb-8 md:mb-12 w-[359px] md:w-[864px]">
-<<<<<<< HEAD
+        <h1 className="text-3xl md:text-5xl text-[#000000] leading-10 md:leading-14 font-SGsemibold text-center mb-8 md:mb-12 w-[300px] md:w-[864px]">
           <span className="text-blue">{t("hero.part1Title")}</span>
           <br /> {t("hero.part2Title")}
-=======
-          <span className="text-blue">Stop Wasting</span>
-          <br /> Your Time with Using Paper Invoice
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
         </h1>
         <div className="relative mb-8 md:mb-10">
           <img
@@ -49,12 +40,7 @@ const Hero = () => {
           />
         </div>
         <p className="w-[300px] md:w-[600px] text-sm lg:text-xl md:text-lg leading-5 md:leading-7 font-medium text-[#222222] text-center mb-5">
-<<<<<<< HEAD
           {t("hero.description")}
-=======
-          The invoice software improves speed and professionalism by allowing
-          for branded invoice production and customization.
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
         </p>
         <div className="flex gap-5">
           <Button label="Login" overrideClasses={btnWhiteOverrideClasses} />

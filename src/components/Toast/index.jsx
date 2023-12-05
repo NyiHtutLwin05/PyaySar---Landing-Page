@@ -1,20 +1,12 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { Box, Link, Button } from "@chakra-ui/react";
-<<<<<<< HEAD
-// import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+import { Link, Button } from "@chakra-ui/react";
+import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import { GlobalIconLg } from "../../constants/Icons";
 import DrawerUI from "../Drawer";
 import HeroTablet from "../../section/Hero/Hero.tablet";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
-=======
-import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
-import { GlobalIconLg } from "../../constants/Icons";
-import DrawerUI from "../Drawer";
-import HeroTablet from "../../section/Hero/Hero.tablet";
-
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
 const Toast = () => {
   // The 'MenuItems' array contains the labels for the navigation menu.
   const MenuItems = ["Home", "Feature", "About Us", "Contact"];
@@ -38,17 +30,11 @@ const Toast = () => {
   // ----
 
   // This state is used to dynamically toggle the arrow direction
-<<<<<<< HEAD
-  // const [isArrowDown, setArrow] = useState(true);
-  // const handleClick = () => {
-  //   setArrow((p) => !p);
-  // };
-=======
-  const [isArrowDown, setArrow] = useState(true);
-  const handleClick = () => {
-    setArrow((p) => !p);
+  const { t } = useTranslation();
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
   };
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
   // ----
 
   // The 'handleScroll' function facilitates smooth scrolling to a specified section.
@@ -57,15 +43,7 @@ const Toast = () => {
     element.scrollIntoView({ behavior: "smooth" });
   };
   // ----
-<<<<<<< HEAD
-  const { t } = useTranslation();
-  const changeLanguage = (e) => {
-    const selectedLanguage = e.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
-=======
 
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
   return (
     <>
       {/* Toast Section */}
@@ -108,33 +86,25 @@ const Toast = () => {
                     onClick={() => handleScroll(i.toLowerCase())}
                   >
                     {" "}
-<<<<<<< HEAD
-                    {t(`nav.navitem.${i.toLowerCase()}`)}
-=======
                     {i}
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
                   </Link>
                 </ul>
               </li>
             ))}
           </div>
           <div className="flex items-center gap-5 ">
-<<<<<<< HEAD
-            <div className="flex gap-2">
-              <GlobalIconLg />
-              <select
-                className="text-xs font-medium leading-7 md:text-sm"
-                onClick={changeLanguage}
-              >
-                <option value="en">{t("nav.language.english")}</option>
-                <option value="mm">{t("nav.language.myanmar")}</option>
-              </select>
-            </div>
-            {/* <div className="flex items-center gap-2 text-center align-sub">
-=======
             <div className="flex items-center gap-2 text-center align-sub">
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
-              <GlobalIconLg />
+              <div className="flex gap-2">
+                <GlobalIconLg />
+                <select
+                  className="text-xs font-medium leading-7 md:text-sm"
+                  onChange={handleLanguageChange}
+                >
+                  <option value="en">{t("nav.language.english")}</option>
+                  <option value="mm">{t("nav.language.myanmar")}</option>
+                </select>
+              </div>
+              {/* <GlobalIconLg />
               <p className="select-none font-SGregular">English</p>
               {isArrowDown ? (
                 <RiArrowDownSLine
@@ -150,21 +120,13 @@ const Toast = () => {
                   } `}
                   onClick={handleClick}
                 />
-              )}
-<<<<<<< HEAD
-            </div>  */}
-=======
+              )} */}
             </div>
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
             <Button
               colorScheme="black"
               className="w-24 h-10 text-white bg-black rounded-md font-SGsemibold lg:flex md:hidden sm:hidden"
             >
-<<<<<<< HEAD
-              {t("nav.button.login")}
-=======
               Login
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
             </Button>
             <div className="lg:hidden">
               <DrawerUI />
