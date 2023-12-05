@@ -8,10 +8,9 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "mm",
-
+    fallbackLng: "en",
     detection: {
-      order: ["queryString", "cookie", "navigator"],
+      order: ["queryString", "cookie"],
       cache: ["cookie"],
     },
     debug: true,

@@ -8,7 +8,7 @@ import Newsletter from "../section/News_Letter";
 
 const Layout = () => {
   return (
-    <div className='max-w-[1040px] mx-auto'>
+    <>
       <section>
         <Hero />
       </section>
@@ -18,19 +18,34 @@ const Layout = () => {
       <section>
         <About />
       </section>
-      <section>
-        <Contact />
-      </section>
-      <section>
-        <FAQ />
-      </section>
-      <section>
-        <Newsletter />
-      </section>
-      <section>
-        <Footer />
-      </section>
-    </div>
+      <div className="max-w-[1040px] mx-auto">
+        <section>
+          <Contact />
+        </section>
+        <section>
+          <FAQ />
+        </section>
+        <section>
+          <Newsletter />
+        </section>
+        <section>
+          <Footer />
+        </section>
+      </div>
+    </>
+    //   <section>
+    //     <Contact />
+    //   </section>
+    //   <section>
+    //     <FAQ />
+    //   </section>
+    //   <section>
+    //     <Newsletter />
+    //   </section>
+    //   <section>
+    //     <Footer />
+    //   </section>
+    // </div>
   );
 };
 

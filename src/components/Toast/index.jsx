@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { Box, Link, Button } from "@chakra-ui/react";
+import { Link, Button } from "@chakra-ui/react";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import { GlobalIconLg } from "../../constants/Icons";
 import DrawerUI from "../Drawer";
 import HeroTablet from "../../section/Hero/Hero.tablet";
-
+import { useTranslation } from "react-i18next";
+import i18n from "../../../i18n";
 const Toast = () => {
   // The 'MenuItems' array contains the labels for the navigation menu.
   const MenuItems = ["Home", "Feature", "About Us", "Contact"];
@@ -29,9 +30,10 @@ const Toast = () => {
   // ----
 
   // This state is used to dynamically toggle the arrow direction
-  const [isArrowDown, setArrow] = useState(true);
-  const handleClick = () => {
-    setArrow((p) => !p);
+  const { t } = useTranslation();
+  const handleLanguageChange = (event) => {
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
   };
   // ----
 
@@ -92,7 +94,17 @@ const Toast = () => {
           </div>
           <div className="flex items-center gap-5 ">
             <div className="flex items-center gap-2 text-center align-sub">
-              <GlobalIconLg />
+              <div className="flex gap-2">
+                <GlobalIconLg />
+                <select
+                  className="text-xs font-medium leading-7 md:text-sm"
+                  onChange={handleLanguageChange}
+                >
+                  <option value="en">{t("nav.language.english")}</option>
+                  <option value="mm">{t("nav.language.myanmar")}</option>
+                </select>
+              </div>
+              {/* <GlobalIconLg />
               <p className="select-none font-SGregular">English</p>
               {isArrowDown ? (
                 <RiArrowDownSLine
@@ -108,7 +120,7 @@ const Toast = () => {
                   } `}
                   onClick={handleClick}
                 />
-              )}
+              )} */}
             </div>
             <Button
               colorScheme="black"

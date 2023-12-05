@@ -7,6 +7,7 @@ import { Button } from "@chakra-ui/react";
 import FeatureTablet from "./Feature.tablet";
 import { Box, useBreakpointValue, Flex } from "@chakra-ui/react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 export const listBox = [
   "PDF Generation",
   "Invoice Generation",
@@ -36,6 +37,10 @@ const Feature = () => {
     const newIndex = startIndex - itemsPerPage;
     setStartIndex(Math.max(newIndex, 0));
   };
+
+  const { t } = useTranslation();
+  const contentHtml = t("features.content");
+
   return (
     <>
       {/* Tablet View  */}
@@ -44,10 +49,9 @@ const Feature = () => {
         <div className="flex items-center justify-center gap-3 mt-20 text-4xl text-center lg:gap-14 md:gap-8">
           <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
           <div className="  text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
-            Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
-            Ivoicing For Your Business
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
             <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
-              Our Feature
+              {t("features.title")}
             </h1>
           </div>
 
@@ -62,7 +66,7 @@ const Feature = () => {
                 className=" w-[16rem] h-[14rem] pr-6 flex flex-col justify-around border border-black rounded-lg"
               >
                 <p className="flex h-20 pl-4 mt-2 text-xl font-medium tracking-wider text-center w-60 justify-items-start font-SGsemibold">
-                  {item}
+                  {t(`features.item.${item}`)}
                 </p>
                 <div className="flex justify-end ">
                   <Button
@@ -109,10 +113,9 @@ const Feature = () => {
               <hr className=" w-[3rem] lg:w-[9.5rem] md:w-[8rem] bg-black border-black  h-0 rounded-sm" />
 
               <div className="  text-lg lg:text-[2rem] md:text-[1rem] font-SGsemibold">
-                Why <span className=" text-blue">Choose</span> Pyaysar <br />{" "}
-                Ivoicing For Your Business
+                <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
                 <h1 className="text-xs text-title font-SGregular lg:text-xl md:text-lg">
-                  Our Feature
+                  {t("features.title")}
                 </h1>
               </div>
 
@@ -138,7 +141,7 @@ const Feature = () => {
                     >
                       <div className=" w-[15rem] flex flex-col gap-y-5">
                         <p className="flex w-64 h-20 pl-4 mt-2 text-2xl font-medium tracking-wider font-SGsemibold">
-                          {i}
+                          {t(`features.item.${i}`)}
                         </p>
                         <div className="flex justify-end ">
                           <Button
