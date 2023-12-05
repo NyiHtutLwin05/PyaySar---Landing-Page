@@ -1,14 +1,22 @@
 import { useDisclosure } from "@chakra-ui/react";
 import React, { useState } from "react";
+<<<<<<< HEAD
 // import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 import DrawerUI from "../../components/Drawer";
 import { GlobalIconLg } from "../../constants/Icons";
 import i18n from "../../../i18n";
 import { useTranslation } from "react-i18next";
+=======
+import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+import DrawerUI from "../../components/Drawer";
+import { GlobalIconLg } from "../../constants/Icons";
+
+>>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
 const HeroTablet = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [placement, setPlacement] = React.useState("left");
+<<<<<<< HEAD
   // const [isArrowDown, setArrow] = useState(true);
 
   // const handleClick = () => {
@@ -19,6 +27,13 @@ const HeroTablet = () => {
     i18n.changeLanguage(selectedLanguage);
   };
   const { t } = useTranslation();
+=======
+  const [isArrowDown, setArrow] = useState(true);
+
+  const handleClick = () => {
+    setArrow((p) => !p);
+  };
+>>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
   return (
     <>
       <div>
@@ -27,6 +42,7 @@ const HeroTablet = () => {
           <div className="flex gap-3">
             <div className="flex ">
               <div className="flex items-center gap-[8px] text-center align-sub">
+<<<<<<< HEAD
                 <div className="flex gap-2">
                   <GlobalIconLg />
                   <select
@@ -38,6 +54,9 @@ const HeroTablet = () => {
                   </select>
                 </div>
                 {/* <div className="">
+=======
+                <div className="">
+>>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
                   <GlobalIconLg />
                 </div>
                 <div>
@@ -59,7 +78,11 @@ const HeroTablet = () => {
                       onClick={handleClick}
                     />
                   )}
+<<<<<<< HEAD
                 </div> */}
+=======
+                </div>
+>>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
               </div>
             </div>
 
