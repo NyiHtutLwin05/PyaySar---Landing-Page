@@ -20,10 +20,9 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
+
     "react-i18next": "^13.5.0",
-=======
->>>>>>> d2d6a874f0e7cecd8f0eda606b8da7a5bca185ed
+
     "react-icons": "^4.12.0",
     "react-responsive": "^9.0.2"
   },
