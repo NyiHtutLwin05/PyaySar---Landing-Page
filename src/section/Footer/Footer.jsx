@@ -32,10 +32,10 @@ const Footer = () => {
 
             {/* navigation items */}
             <div className='flex text-lg leading-6 font-SGmedium text-black w-[380px] lg:w-[421px] justify-between'>
-              <a href='#'>Home</a>
-              <a href='#feature'>Features</a>
-              <a href='#about us'>About Us</a>
-              <a href='#contact'>Contact</a>
+              <a href='#'>{t('nav.navitem.home')}</a>
+              <a href='#feature'>{t('nav.navitem.feature')}</a>
+              <a href='#about us'>{t('nav.navitem.about us')}</a>
+              <a href='#contact'>{t('nav.navitem.contact')}</a>
             </div>
           </div>
 

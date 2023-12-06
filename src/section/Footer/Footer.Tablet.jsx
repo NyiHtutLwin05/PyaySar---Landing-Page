@@ -23,10 +23,10 @@ const FooterTablet = () => {
 
         {/* navigation items */}
         <div className='flex flex-wrap gap-2 sm:gap-4 text-[10px] sm:text-base leading-4 sm:leading-5 font-SGmedium text-black'>
-          <a href='#'>Home</a>
-          <a href='#feature'>Features</a>
-          <a href='#about us'>About Us</a>
-          <a href='#contact'>Contact</a>
+          <a href='#'>{t('nav.navitem.home')}</a>
+          <a href='#feature'>{t('nav.navitem.feature')}</a>
+          <a href='#about us'>{t('nav.navitem.about us')}</a>
+          <a href='#contact'>{t('nav.navitem.contact')}</a>
         </div>
       </div>
 
